@@ -7,7 +7,7 @@
 #include "TF1.h"
 #include "TCanvas.h"
 #include "TString.h"
-void GetMultiplicity(TH1 *hh, int nn_max = 10)
+void GetMultiplicity(TH1 *hh, int nn_max = 15)
 {
 
   std::cout << "Welcome to the automatic GetMultiplicity macro \n"
@@ -27,7 +27,10 @@ void GetMultiplicity(TH1 *hh, int nn_max = 10)
   };
   
   int nn_tot = 0;
-  for (int i = 1; i<=nn_max; i++)nn_tot+=mult[i];  
+  for (int i = 1; i<=nn_max; i++) nn_tot+=i*mult[i];  
+  
+//   for (int i = 1; i<=nn_max; i++)   std::cout	<<i<<" ddd "<< mult[i] <<"\n";
+
 
 
   std::cout	<<" N1/N2 " <<mult[1]*1.0/mult[2]
