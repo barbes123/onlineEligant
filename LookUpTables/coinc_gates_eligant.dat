@@ -12,7 +12,7 @@
 #------------------------------------
 trg_det_type	9998   8
 trg_domain 	9999   28
-window_length 	1000   256e6
+window_length 	1000   128e6
 pre_window	1002	0
 #------------------------------------
 #reaction param
